@@ -16,7 +16,7 @@ export const getEmployee = async(req: Request, res: Response) =>{
         res.json (employee)
     } else {
         res.status(404).json ({
-            msg: 'no existe un producto con el id ${id}'
+            msg: 'no existe un empleado con el id ${id}'
         })  
     }
 
