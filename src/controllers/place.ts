@@ -24,4 +24,3 @@ export const getPlaces = async (req: Request, res: Response) => {
     }
 };
 
-// Añade otros métodos del controlador aquí (create, update, delete, etc.)

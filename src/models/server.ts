@@ -2,6 +2,7 @@ import express, {Application, Request, Response} from 'express';
 import cors from 'cors'; 
 import routesEmployeed from '../routes/employee'; 
 import routesPlaces from '../routes/place'; 
+import routesEvents from '../routes/event'; 
 
 import db from '../db/connection';
 
@@ -35,8 +36,9 @@ class Server {
             })
         })
 
-        this.app.use ('/api/employees', routesEmployeed)
-        this.app.use ('/api/places', routesPlaces)
+        this.app.use ('/api/employees', routesEmployeed),
+        this.app.use ('/api/places', routesPlaces),
+        this.app.use ('/api/events', routesEvents)
     }
 
     midlewares (){
